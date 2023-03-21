@@ -14,8 +14,16 @@ namespace Pelicula
         private string director;
 
         //Constructores
-  
-        //Métodos
+    public Pelicula()
+        {
+           
+        }
+    public Pelicula(string titulo, Int16 año)
+        {
+            this.titulo = titulo;
+            this.año = año;
+        }    
+        
 
      //get
      public string GetTitulo(){return titulo;}
@@ -27,12 +35,16 @@ namespace Pelicula
      public void SetAño(Int16 año){this.año = año;}
      public void SetPais(string pais){this.pais = pais;}
      public void SetDirector(string director){this.director = director;}
+
+    //Métodos
     public void Imprime()
         {
            Console.WriteLine($"{titulo} ({año})");
+        }
+    public void Imprime2()
+        {
 
         }
-
 
     }
     
